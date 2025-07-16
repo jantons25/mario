@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identificación | EPSEL S.A.</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Include same Top Bar and Navbar -->
+  <div class="top-bar">
+    <div class="container">
+      <div>
+        <span><i class="fa-solid fa-location-dot"></i> Av. Grau 536, Chiclayo 14001</span>
+        &nbsp;&nbsp;
+        <span><i class="fa-solid fa-phone"></i> +51 942 813 797</span>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <img src="fotos\logo_epsel.png" alt="EPSEL Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Orientación al Cliente</a></li>
+          <li><a href="#">Gobernanza y Gobernabilidad</a></li>
+          <li><a href="#">Ciclo Operacional</a></li>
+          <li><a href="#">VMA</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Identificación Form -->
+  <section class="identificacion">
+    <div class="container">
+      <h2 style="text-align:center;margin-bottom:2rem;">Identificación</h2>
+      <div class="form-box">
+        <label for="input-id">Escribe Aquí</label>
+        <input type="text" id="input-id" placeholder="Código de Cliente">
+
+        <div class="radio-group">
+          <label><input type="radio" name="tipo" checked> Nro. de Inscripción</label>
+          <label><input type="radio" name="tipo"> D.N.I</label>
+        </div>
+
+        <label for="input-cod">Código de Seguridad</label>
+        <input type="password" id="input-cod" placeholder="Código de Seguridad">
+        <label style="font-size:.85rem;"><input type="checkbox" onclick="togglePwd()"> Mostrar Contraseña</label>
+
+        <button onclick="alert('Código generado placeholder');">Generar</button>
+        <button onclick="alert('Comprobado');">Comprobar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Same as Index -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="fotos\logo_epsel.png" alt="EPSEL Logo" style="height:60px;">
+        <p>Contribuir a mejorar la calidad de vida de la población de Lambayeque, brindando servicios de saneamiento eficientes y de calidad.</p>
+        <a href="#" class="login-btn">Iniciar Sesión</a>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <a href="historia.html">Historia</a>
+        <a href="mision-vision.html">Misión y Visión</a>
+        <a href="#">Nuestro Compromiso</a>
+        <a href="#">Valores Empresariales</a>
+        <a href="#">Alta Dirección</a>
+      </div>
+      <div>
+        <h4>Transparencia</h4>
+        <a href="#">Transparencia Pública</a>
+        <a href="#">Transparencia Estándar</a>
+        <a href="#">Centros de Atención</a>
+        <a href="#">Centro de Recaudación</a>
+        <a href="#">Requisitos para Trámites</a>
+      </div>
+      <div>
+        <h4>Nuestros VMA</h4>
+        <a href="#">¿Por qué el control VMA?</a>
+        <a href="#">Normatividad</a>
+        <a href="#">¿Cómo se aplica la Normatividad?</a>
+        <a href="#">Información general</a>
+      </div>
+    </div>
+    <p class="copy">© 2025 | Todos los Derechos Reservados.</p>
+  </footer>
+
+<script>
+function togglePwd(){
+  const input=document.getElementById('input-cod');
+  input.type = input.type === 'password' ? 'text' : 'password';
+}
+</script>
+</body>
+</html>
