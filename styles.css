@@ -90,6 +90,10 @@ h1,h2,h3,h4,h5{
   background:url('fotos/fondo.png') center/cover no-repeat;
 }
 
+#enlace__A{
+  color: #001E38;
+}
+
 /* Capa azul translúcida */
 .hero::before{
   content:'';
